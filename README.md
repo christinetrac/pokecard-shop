@@ -1,2 +1,2 @@
-# raptors-info
-Info on the Raptors!
+# random-pokemon
+a random pokemon generator :D
