@@ -11,7 +11,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({loading: true})
     fetch('https://pokeapi.co/api/v2/pokemon/500')
     .then(res => res.json())
     .then((data) => {
