@@ -6,25 +6,30 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      pokemon: {}
+      pokemon: [],
+      loading: false
     }
   }
 
   componentDidMount() {
-    fetch('https://pokeapi.co/api/v2/pokemon/500')
+    let id = Math.floor(Math.random() * 807)
+    this.setState({loading: true})
+    fetch('https://pokeapi.co/api/v2/pokemon/' + id)
     .then(res => res.json())
     .then((data) => {
       this.setState({
-        pokemon: data
+        pokemon: data,
+        loading:false
       })
     })
     .catch(console.log)
   }
 
   render(){
+    const result = this.state.loading ? "I Choose You..." : <div class="Pokecard"><Pokemon pokemon = {this.state.pokemon}/></div>
     return (
       <div>
-        <Pokemon pokemon = {this.state.pokemon}/>
+        {result}
       </div>
     )
   }
