@@ -1,37 +1,33 @@
 import React, {Component} from 'react';
-import Players from './components/players';
+import Pokemon from './components/pokemon';
 import './App.css';
 
 class App extends Component {
-  render(){
-    return (
-      <div className="container">
-        <h1><center>Players</center></h1>
-        <div className="row">
-          {this.state.players.map(player=>(
-          <div key={player.id} id='cardItem' className="col-lg-4">
-            <Players player={player}/>
-          </div>
-          ))}
-        </div>
-      </div>
-      // <Players players = {this.state.players}/>
-    )
+  constructor(){
+    super()
+    this.state = {
+      pokemon: {}
+    }
   }
 
-  state = {
-    players: []
-  };
-
   componentDidMount() {
-    var users = 416;
-    fetch('https://www.balldontlie.io/api/v1/players/')
+    this.setState({loading: true})
+    fetch('https://pokeapi.co/api/v2/pokemon/500')
     .then(res => res.json())
     .then((data) => {
-      let results = data.data;
-      this.setState({players: results})
+      this.setState({
+        pokemon: data
+      })
     })
     .catch(console.log)
+  }
+
+  render(){
+    return (
+      <div>
+        <Pokemon pokemon = {this.state.pokemon}/>
+      </div>
+    )
   }
 }
 
