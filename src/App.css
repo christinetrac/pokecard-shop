@@ -1,6 +1,5 @@
 .Pokecard {
   margin: 0;
-  background: yellow;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,41 +15,30 @@
   margin-right: auto;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+html {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  /* background-image: linear-gradient(to bottom right, #76b9e9, rgb(255, 117, 117)); */
+  background: #F6F6F6;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
+.list-group-item {
+  font-size: 12px;
+  padding: 10px;
 }

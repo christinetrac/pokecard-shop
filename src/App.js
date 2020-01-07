@@ -26,10 +26,9 @@ class App extends Component {
   }
 
   render(){
-    const result = this.state.loading ? "I Choose You..." : <div class="Pokecard"><Pokemon pokemon = {this.state.pokemon}/></div>
     return (
-      <div>
-        {result}
+      <div class="Pokecard">
+        <Pokemon pokemon = {this.state.pokemon}/>
       </div>
     )
   }
