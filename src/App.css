@@ -1,3 +1,12 @@
+.spinner {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 .Pokecard {
   margin: 0;
   position: absolute;
