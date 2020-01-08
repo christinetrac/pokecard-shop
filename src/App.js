@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Pokemon from './components/pokemon';
 import './App.css';
 import Spinner from './components/common/Spinner';
-import pokeball from './pokeball.png';
+import pokeball from './pokeball.gif';
 
 class App extends Component {
   constructor(){
