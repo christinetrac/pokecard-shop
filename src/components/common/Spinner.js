@@ -7,7 +7,7 @@ export default () => {
       <img class = "spinner"
         src={spinner}
         style={{ height: '155%', margin: 'auto', display: 'block' }}
-        alt="Loading..."
+        alt="I Choose You!"
       />
     </div>
   );

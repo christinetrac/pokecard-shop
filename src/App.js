@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Pokemon from './components/pokemon';
 import './App.css';
 import Spinner from './components/common/Spinner';
+import pokeball from './pokeball.png';
 
 class App extends Component {
   constructor(){
@@ -20,7 +21,6 @@ class App extends Component {
     .then((data) => {
       this.setState({
         pokemon: data,
-        //loading:false
       })
       setTimeout(() => { 
         this.setState({loading:false})
@@ -30,18 +30,18 @@ class App extends Component {
   }
 
   render(){
-    const pokemon = this.state.pokemon;
     const loading = this.state.loading;
-    let display;
-    if(pokemon == null || loading){
-      display = <Spinner/>;
-    } else {
-      display = <Pokemon pokemon = {this.state.pokemon}/>;
+
+    function refresh() {
+      window.location.reload();
     }
 
     const showPokemon = (
-      <div class="Pokecard">
-        <Pokemon pokemon = {this.state.pokemon}/>
+      <div>
+        <input type="image" src={pokeball} onClick={refresh} class="pokeball"/>
+        <div class="Pokecard">
+          <Pokemon pokemon = {this.state.pokemon}/>
+        </div>
       </div>
     );
 
@@ -52,9 +52,6 @@ class App extends Component {
     );
 
     return (
-      // <div class="Pokecard">
-      //   <Pokemon pokemon = {this.state.pokemon}/>
-      // </div>
       <div>{loading ? showSpinner: showPokemon}</div>
     )
   }

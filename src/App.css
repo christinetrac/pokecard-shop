@@ -16,6 +16,13 @@
   transform: translate(-50%, -50%);
 }
 
+.pokeball {
+  height: 40px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+}
+
 .card-img-top {
   max-height: 12rem;
   max-width: 12rem;
@@ -29,7 +36,6 @@ html {
   line-height: 1.6;
   min-height: 100vh;
   overflow: hidden;
-  /* background-image: linear-gradient(to bottom right, #76b9e9, rgb(255, 117, 117)); */
   background: #F6F6F6;
 }
 
@@ -49,5 +55,5 @@ html {
 
 .list-group-item {
   font-size: 12px;
-  padding: 10px;
+  padding: 8px;
 }
