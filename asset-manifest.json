@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pokecard-shop/static/css/main.792da5b9.chunk.css",
+    "main.js": "/pokecard-shop/static/js/main.5156d332.chunk.js",
+    "main.js.map": "/pokecard-shop/static/js/main.5156d332.chunk.js.map",
+    "runtime-main.js": "/pokecard-shop/static/js/runtime-main.9a614acb.js",
+    "runtime-main.js.map": "/pokecard-shop/static/js/runtime-main.9a614acb.js.map",
+    "static/js/2.9681418c.chunk.js": "/pokecard-shop/static/js/2.9681418c.chunk.js",
+    "static/js/2.9681418c.chunk.js.map": "/pokecard-shop/static/js/2.9681418c.chunk.js.map",
+    "index.html": "/pokecard-shop/index.html",
+    "precache-manifest.b0ad0eccb1c6b45bef8589781780cceb.js": "/pokecard-shop/precache-manifest.b0ad0eccb1c6b45bef8589781780cceb.js",
+    "service-worker.js": "/pokecard-shop/service-worker.js",
+    "static/css/main.792da5b9.chunk.css.map": "/pokecard-shop/static/css/main.792da5b9.chunk.css.map",
+    "static/js/2.9681418c.chunk.js.LICENSE": "/pokecard-shop/static/js/2.9681418c.chunk.js.LICENSE",
+    "static/media/choose.gif": "/pokecard-shop/static/media/choose.84c5b716.gif",
+    "static/media/pokeball.gif": "/pokecard-shop/static/media/pokeball.e78d3c28.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a614acb.js",
+    "static/js/2.9681418c.chunk.js",
+    "static/css/main.792da5b9.chunk.css",
+    "static/js/main.5156d332.chunk.js"
+  ]
+}
